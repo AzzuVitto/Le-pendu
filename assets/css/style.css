@@ -1,0 +1,92 @@
+body {
+    background-color: darkslategray;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: 'Black Ops One';
+    color: rgb(81, 255, 0);
+}
+
+h1,
+a {
+    font-family: 'Black Ops One';
+    color: rgb(81, 255, 0);
+    text-decoration: none;
+    text-align: center;
+}
+
+.letters-container {
+    font-family: 'Black Ops One';
+    color: rgb(81, 255, 0);
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 150px;
+}
+
+.commandes {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+#underScoreContainer {
+    padding-top: 50px;
+    font-size: x-large;
+    text-align: center;
+}
+
+#pendu {
+
+    display: flex;
+    justify-content: center;
+}
+
+.circle {
+    border: 1px solid rgb(81, 255, 0);
+    border-radius: 100%;
+    width: 25px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.randomContainer {
+    color: rgb(81, 255, 0);
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .letters-container {
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+
+    #pendu {
+        margin-right: 5%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #underScoreContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: xx-small
+    }
+
+    #bird {
+        height: 200px
+    }
+
+    .commandes {
+        flex-direction: column;
+    }
+}
